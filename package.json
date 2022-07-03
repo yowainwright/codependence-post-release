@@ -5,6 +5,7 @@
   "main": "dist/index.cjs",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
+    "lint": "eslint src",
     "update-repo": "ts-node src/index.ts"
   },
   "keywords": [],
