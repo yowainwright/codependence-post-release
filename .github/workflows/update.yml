@@ -25,13 +25,10 @@ jobs:
       - run: pnpm install --no-frozen-lockfile
       - run: pnpm install codependence@latest -D
       - run: pnpm update
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "chore: apply updates"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update dependencies
           title: "[Codependence]  update dependencies"
           body: |
