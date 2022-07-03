@@ -38,5 +38,5 @@ jobs:
 
             [1]: https://github.com/yowainwright/codependence-cron
             [2]: https://github.com/peter-evans/create-pull-request
-            branch: update-dependencies
-            labels: codependencies
+          branch: update-dependencies
+          labels: codependencies
